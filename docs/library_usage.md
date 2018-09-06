@@ -14,6 +14,7 @@ This guide takes the following as an example of IPs for the two nodes:
  
  ## Usage
  ```
+ import GD2_Python
  from GD2_Python.api.client import Client
  client = Client()
  #The method names depend on the yaml/json api definition
