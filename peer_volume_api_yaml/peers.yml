@@ -89,24 +89,7 @@ peerdelete:
         content:
           application/json:
 
-components:
-     requestBodies:
-          peeradd:
-               summary: Add Peer
-               content:
-                 application/json:
-                  schema:
-                    $ref: './req_peer.yml#/add'
-                  example:
-                    $ref: './req_peer_example.yml#/add'
-          peeredit:
-               summary: Edit peer
-               content:
-                 application/json:
-                   schema:
-                     $ref: './req_peer.yml#/edit'
-                   example:
-                     $ref: './req_peer_example.yml#/edit'
+
              
    
      
