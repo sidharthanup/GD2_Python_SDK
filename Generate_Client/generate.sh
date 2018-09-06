@@ -2,7 +2,18 @@
 set -eu
 
 origin="$(pwd)"
-cd ~/openapi-generator/
+cd ~
+if [ ! -d "./openapi-generator" ]
+  then
+        git clone https://github.com/openapitools/openapi-generator
+        cd ~/openapi-generator/
+        mvn clean package
+        exit 0
+else
+        cd ~/openapi-generator
+fi
+
+
 dest_dir=${2}
 
 #The following line invokes openapi-generator that generates client library
