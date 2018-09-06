@@ -75,17 +75,5 @@ volstop:
             example:
               $ref: './resp_volume_example.yml#/stopped'
 
-components:
-     requestBody:
-         VolumeCreate:
-             description: Volume Create
-             required: true     
-             content:
-              application/json:
-                schema:
-                  $ref: './resp_volume.yml#/volume'
-                example:
-                  $ref: './resp_volume_example.yml#/stopped'
-                    
                    
                
