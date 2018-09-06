@@ -17,7 +17,7 @@ fi
 dest_dir=${2}
 
 #The following line invokes openapi-generator that generates client library
-#Make sure theres a config.py file in your current working directory
+#Make sure theres a config.json file in your current working directory
 #Also Do not edit this line..I dont see any reason to..
 java -jar modules/openapi-generator-cli/target/openapi-generator-cli.jar generate -i "${1}" -g python -o "${dest_dir}" -c "${origin}/config.json"
 
