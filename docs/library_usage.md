@@ -17,7 +17,7 @@ This guide takes the following as an example of IPs for the two nodes:
  import GD2_Python
  from GD2_Python.api.client import Client
  client = Client()
- #The method names depend on the yaml/json api definition
+ #The method names and parameters depend on the yaml/json api definition
  client.get_peer("192.168.56.102")
  ```
  
