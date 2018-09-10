@@ -38,7 +38,7 @@ paths:
         $ref: './peers.yml#/peeradd/responses/201'
   /peers/{peerid}:
     get:
-     operationId: GetPeers
+     operationId: GetPeer
      parameters:
       - $ref: './peers.yml#/peerinfo/parameters'
      responses:
