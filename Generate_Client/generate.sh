@@ -39,5 +39,5 @@ mv "${dest_dir}/GD2_Python/api/default_api.py" "${dest_dir}/GD2_Python/api/clien
 
 
 #One liner to recurively substitute some ugly names to something good looking for the SDK using sed
-find ${dest_dir}/GD2_Python -type f -print0 | xargs -0 sed -i -e 's/DefaultApi/Client/g' -e 's/default_api/client/g'
+find ${dest_dir}/GD2_Python -type f -print0 | xargs -0 sed -i -e 's/DefaultApi/Client/g' -e 's/default_api/client/g' -e 's/unknown_base_type/body/g'
 exit 0
