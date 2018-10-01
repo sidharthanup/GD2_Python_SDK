@@ -11,16 +11,16 @@ Peer and Volume management APIs example usage:
  client.add_peer(add={'addresses':['192.168.56.102']})
  
  #Get peer information
- client.get_peer("192.168.56.102")
+ client.get_peer('0c5bc279-397a-4535-be32-301c16dbbc69')
  
  #Get information of all peers in the TSP
  client.get_peers()
  
  #Edit peer information
- client.edit_peer("192.168.56.102", edit={'zone':'3203f226-b37f-42da-83fe-0fe8d043d995'})
+ client.edit_peer('0c5bc279-397a-4535-be32-301c16dbbc69', edit={'zone':'3203f226-b37f-42da-83fe-0fe8d043d995'})
  
  #Delete Peer
- client.delete_peer("192.168.56.102")
+ client.delete_peer('0c5bc279-397a-4535-be32-301c16dbbc69')
  
  #This is for creating volume via manual provisioning
  client.volume_create(body = {'name':'gv1', 'type':'replicate', 'replica':3, 'bricks': [['peerid':'0c5bc279-397a-4535-be32-301c16dbbc69', 'path':'/exports/bricks/gv1/brick1/brick'], ['peerid':'7aafd270-b9b2-40b2-ba0e-7289f7d025c0', 'path':'/exports/bricks/gv1/brick2/brick'], ['peerid':'57470e13-2f9c-4404-9179-fb2ba38cc1d8', 'path': '/exports/bricks/gv1/brick3/brick']]})
