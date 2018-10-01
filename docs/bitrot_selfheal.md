@@ -1,4 +1,4 @@
-Bitrot and Selfheal APIs example usage:
+Bitrot and Self-heal APIs example usage:
  ```
  import glusterapi
  from glusterapi.api.client import Client
