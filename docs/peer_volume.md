@@ -5,7 +5,7 @@ Peer and Volume management APIs example usage:
  client = Client()
  
  #The method names and parameters depend on the yaml/json api definition
- #The api methods being used below are called from the library obtained from running generate.sh using api.yml in peer_volume_api_yaml directory 
+ #The api methods being used below are called from the library obtained from running generate.sh using api.json in peer_volume_api_json directory 
  
  #Add a peer to the TSP
  client.add_peer(add={'addresses':['192.168.56.102']})
