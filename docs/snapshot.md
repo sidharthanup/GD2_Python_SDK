@@ -4,8 +4,8 @@
  from glusterapi.api.client import Client
  client = Client()
  
- #The method names and parameters depend on the yaml/json api definition
- #The api methods being used below are called from the library obtained from running generate.sh using api.json in snapshot_json directory
+ # The method names and parameters depend on the yaml/json api definition
+ # The api methods being used below are called from the library obtained from running generate.sh using api.json in snapshot_json directory
  
  # Create a snapshot:
  glusterapi.snapshot_create(create={'volname':'testvol1', 'snapname': 'testsnap1')
