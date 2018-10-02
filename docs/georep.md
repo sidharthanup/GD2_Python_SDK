@@ -4,8 +4,8 @@ import glusterapi
 from glusterapi.api.client import Client
 client = Client()
 
-#The method names and parameters depend on the yaml/json api definition
-#The api methods being used below are called from the library obtained from running generate.sh using api.json in georep_json directory 
+# The method names and parameters depend on the yaml/json api definition
+# The api methods being used below are called from the library obtained from running generate.sh using api.json in georep_json directory 
 
 # Create a geo-rep session between two cluster volumes:
 glusterapi.geo_replication_create('fba0a488-21a4-42b7-8a41-b27ebaa8e5f4', '25b4e313-7b36-445d-b524-c3daebb91188', create={'mastervol':'testvol1', 'remotehosts':['192.168.56.102'], 'remotevol':'testvol2'})
